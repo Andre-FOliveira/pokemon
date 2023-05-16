@@ -38,8 +38,7 @@ O projeto consiste em apresentar ao usuario algumas informações basicas:
 
 ## 🔖 Site
 
-Você pode visualizar a pagina do projeto através <a href="https://poke-cards123.netlify.app/"_blank">DESSE LINK</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-
+Você pode visualizar a pagina do projeto através <a href="https://poke-cards123.netlify.app/" target="_blank">DESSE LINK</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 
 ---
 
