@@ -1,0 +1,207 @@
+body {
+  background-color: #FF4D55;
+  width: 100vw;
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+body.modo-dark {
+	background-color: #191919;
+	
+}
+
+header {
+  width: 90%;
+  height: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2px auto;
+  margin-top: 15px;
+  margin-bottom: -30px;
+}
+
+header #botao-alterar-tema{
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.logo-poko,
+.imagem-botao {
+  width: 30px;
+}
+
+
+.logo {
+  width: 20%;
+}
+
+.personagens {
+  width: 98%;
+  height: 920px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5px;
+  /* margin-left: -246px; */
+
+}
+
+
+
+.card-personagens {
+  display: flex;
+  margin-top: 1%;
+  width: 99%;
+  height: 60%;
+  margin-left: 50px;
+ 
+
+}
+
+.card {
+  display: flex;
+  perspective: 1000px;
+  width: 90%;
+  height: 95%;
+}
+
+.front,
+.back {
+  min-height: 90%;
+  width: 85%;
+  background-color: rgb(0, 0, 0, 0.3);
+  border-radius: 20px;
+  display: flex;
+  padding: 2%;
+  border: solid 5px #ffaa00;
+
+  position: absolute;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  transition: all 1s ease;
+
+}
+
+.front {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  transform: rotateY(0deg);
+}
+
+.back {
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  border: solid 5px #0000ff;
+  background-color: #ffaa00;
+  transform: rotateY(180deg);
+  
+}
+
+.back .info{
+  width: 100%;
+  min-height: 100%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  /* border: 1px solid #191919; */
+
+}
+
+.front img {
+  width: 40%;
+  border-radius: 20px;
+  
+
+}
+
+.back img {
+  width: 80%;
+  height: 130px;
+  opacity: 0.8;
+  border-radius: 20px;
+}
+
+.back .estilo {
+  width: 40px;
+  height: 40px;
+}
+
+.back .img-estilo{
+  display: flex;
+  flex-direction: row;
+}
+
+.back .hp {
+  width: 95%;
+  border: 1px solid #191919;
+  border-radius: 8px;
+  color: #333333;
+  font-family: 'Itim', cursive;
+  margin-top: 2%;
+  font-size: 9px;
+  padding: 2px;
+  background-color: #d3d3d3;
+}
+
+.back .power, .power1 {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  width: 90%;
+  font-family: 'Itim', cursive;
+  margin-top: 10px;
+  font-size: 15px;
+  color: #333333;
+  border: 2px solid #191919;
+  border-radius: 15px;
+  padding: 0 5px;
+  background-color: #b0c4de;
+
+}
+
+.back .desc{
+  margin-top: 10px;
+  width: 90%;
+  font-size: 15px;
+  font-family: 'Itim', cursive;
+  font-weight: 700;
+  color: #333333;
+}
+
+.clase11{
+  width: 2px;
+}
+
+.front h5 {
+
+  color: #FFFFFF;
+  font-size: 22px;
+  text-transform: uppercase;
+}
+
+.front h4 {
+  color: #ffaa00;
+  font-size: 22px;
+  text-transform: capitalize;
+  font-family: 'Itim', cursive;
+}
+
+
+.card:hover .front {
+  transform: rotateY(-180deg);
+}
+
+.card:hover .back {
+  transform: rotateY(0deg);
+}
